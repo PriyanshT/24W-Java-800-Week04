@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.georgiancollege.week04.StringController">
+   <children>
+      <VBox alignment="CENTER" layoutX="143.0" layoutY="51.0" prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="String and Regex" />
+            <HBox alignment="CENTER" spacing="30.0">
+               <children>
+                  <Label text="Enter Phone Number" />
+                  <TextField fx:id="phoneNumTextField" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#manipulatePhoneNum" text="Submit" />
+            <Label fx:id="resultLabel" text="Label" />
+            <Label fx:id="noSpaceLabel" text="Label" />
+            <Label fx:id="formattedLabel" text="Label" />
+         </children>
+         <padding>
+            <Insets left="50.0" right="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
